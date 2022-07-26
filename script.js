@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Defining function that creates criteria password prompts on screen
 function passwordCriteria() {
-  var passwordLengthCriteria = prompt("What is the length criteria of your password? (ex. '5 20' for length between 5 and 20 characters.");
+  var passwordLengthCriteria = prompt("What is the length criteria of your password? (ex. '5 20' for length between 5 and 20 characters.)");
 
   // Split the prompt answer into two different integer variables
   var passwordLengthCriteriaArray = passwordLengthCriteria.split(" ");
@@ -15,7 +15,7 @@ function passwordCriteria() {
   // While loop to test if proper input is recieved
   while (!(passwordLengthMin < passwordLengthMax) || (passwordLengthMin < 0)) {
     alert("Invalid Criteria! Make sure to input a non-negative minimum and maximum integer seperated by a space.");
-    var passwordLengthCriteria = prompt("What is the length criteria of your password? (ex. '5 20' for length between 5 and 20 characters.");
+    var passwordLengthCriteria = prompt("What is the length criteria of your password? (ex. '5 20' for length between 5 and 20 characters.)");
     var passwordLengthCriteriaArray = passwordLengthCriteria.split(" ");
     var passwordLengthMin = parseInt(passwordLengthCriteriaArray[0]);
     var passwordLengthMax = parseInt(passwordLengthCriteriaArray[1]);
